@@ -2,7 +2,7 @@ import string
 
 user_input = input("Введіть рядок: ")
 #Видаляємо знаки пунктуації та пробіли з рядка який ввів користувач
-clean_string = ''.join(char for char in user_input if char not in string.punctuation and char != ' ')
+clean_string = ''.join(char for char in user_input if char not in string.punctuation)
 #Розділяємо рядок на окремі слова
 words = clean_string.split()
 
